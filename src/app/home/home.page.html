@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary" >
+    <ion-title>age calculator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Enter Your year of birth</ion-label>
+    <ion-input type="text" [(ngModel)]="myager.year" [ngModelOptions]="{standalone: true}" (keyup)="calAge()"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Age</ion-label>
+    <ion-input type="text" [(ngModel)]="myager.age" [ngModelOptions]="{standalone: true}" disabled></ion-input>
+  </ion-item>
+</ion-content>
